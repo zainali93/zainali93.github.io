@@ -346,6 +346,10 @@
                                     class="publication-link">
                                     [Code]
                                 </a>
+                                <button class="publication-link publication-link-button video-trigger" type="button"
+                                    data-video="assets/videos/markhor.mp4" data-title="Markhor: Adapting LLMs to Urdu">
+                                    [Watch Overview ▶]
+                                </button>
                             </div>
 
                             <div class="paper-notice" id="markhor-paper-notice" hidden>
@@ -390,6 +394,11 @@
                                     rel="noopener noreferrer" class="publication-link">
                                     [Code]
                                 </a>
+                                <button class="publication-link publication-link-button video-trigger" type="button"
+                                    data-video="assets/videos/domain-adaptation.mp4"
+                                    data-title="Domain Adaptation for Urdu Fake News Classification">
+                                    [Watch Overview ▶]
+                                </button>
                             </div>
                         </div>
                     </article>
@@ -422,6 +431,11 @@
                                     rel="noopener noreferrer" class="publication-link">
                                     [Code]
                                 </a>
+                                <button class="publication-link publication-link-button video-trigger" type="button"
+                                    data-video="assets/videos/human-machine-fake-news.mp4"
+                                    data-title="Detection of Human and Machine-Authored Fake News in Urdu">
+                                    [Watch Overview ▶]
+                                </button>
                             </div>
                         </div>
                     </article>
@@ -455,6 +469,11 @@
                                     rel="noopener noreferrer" class="publication-link">
                                     [Code]
                                 </a>
+                                <button class="publication-link publication-link-button video-trigger" type="button"
+                                    data-video="assets/videos/stance-detection.mp4"
+                                    data-title="Enhanced Stance Detection">
+                                    [Watch Overview ▶]
+                                </button>
                             </div>
                         </div>
                     </article>
@@ -1117,6 +1136,25 @@
             </div>
         </footer>
     </main>
+    <!-- Research Video Modal -->
+    <div class="video-modal" id="video-modal" hidden>
+        <div class="video-modal-backdrop" data-video-close></div>
+
+        <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+
+            <div class="video-modal-header">
+                <h2 id="video-modal-title">Research Overview</h2>
+
+                <button class="video-modal-close" type="button" aria-label="Close video" data-video-close>
+                    &times;
+                </button>
+            </div>
+
+            <video id="research-video" controls playsinline preload="metadata">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

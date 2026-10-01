@@ -734,6 +734,102 @@ button:focus-visible {
     display: none;
 }
 
+/* Research video modal */
+
+.video-modal[hidden] {
+    display: none;
+}
+
+.video-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+.video-modal-backdrop {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(10, 20, 35, 0.78);
+    backdrop-filter: blur(4px);
+}
+
+.video-modal-dialog {
+    position: relative;
+    z-index: 1;
+
+    width: min(960px, 100%);
+
+    background: var(--surface);
+    border-radius: var(--radius);
+
+    overflow: hidden;
+
+    box-shadow: 0 30px 80px rgba(10, 20, 35, 0.3);
+}
+
+.video-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    padding: 1rem 1.25rem;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.video-modal-header h2 {
+    color: var(--navy-dark);
+
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.video-modal-close {
+    flex-shrink: 0;
+
+    width: 36px;
+    height: 36px;
+
+    background: transparent;
+    border: 0;
+    border-radius: 50%;
+
+    color: var(--text-muted);
+
+    font-family: inherit;
+    font-size: 1.7rem;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.video-modal-close:hover {
+    background: var(--navy-light);
+    color: var(--navy-dark);
+}
+
+#research-video {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    background: #000000;
+}
+
 
 /* Earlier publications */
 
@@ -1631,5 +1727,40 @@ button:focus-visible {
 
     .footer-content {
         gap: 1rem;
+    }
+
+    .video-modal {
+        padding: 1rem;
+    }
+
+    .video-modal-header {
+        padding: 0.8rem 1rem;
+    }
+
+    .video-modal-header h2 {
+        font-size: 0.9rem;
+    }
+
+    .education-title-row {
+        display: contents;
+    }
+
+    .education-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education-location {
+        order: 1;
+    }
+
+    .education-status {
+        order: 2;
+        align-self: flex-start;
+        margin-top: 0.6rem;
+    }
+
+    .education-description {
+        order: 3;
     }
 }
