@@ -1271,27 +1271,59 @@ button:focus-visible {
     font-size: 0.78rem;
     font-weight: 600;
 }
+.specialization-details {
+    margin: 0;
+}
 
-/* NLP specialization courses */
-
-.training-subitems {
+.specialization-details summary {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 0.45rem;
 
-    padding: 1rem 0 1rem 1rem;
+    width: fit-content;
 
-    border-bottom: 1px solid var(--border);
-    border-left: 2px solid var(--navy-light);
-}
-
-.training-subitems span {
     color: var(--text-muted);
+    font-size: 0.82rem;
 
-    font-size: 0.8rem;
-    line-height: 1.5;
+    cursor: pointer;
+    list-style: none;
 }
 
+.specialization-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.course-count {
+    color: var(--navy);
+    font-weight: 500;
+}
+
+.course-count::after {
+    content: " ▾";
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.specialization-details[open] .course-count::after {
+    transform: rotate(180deg);
+}
+
+.specialization-courses {
+    margin: 0.55rem 0 0;
+    padding-left: 1.1rem;
+
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    line-height: 1.45;
+}
+
+.specialization-courses li {
+    margin-bottom: 0.3rem;
+}
+
+.specialization-courses li:last-child {
+    margin-bottom: 0;
+}
 /* =========================================================
    Contact
    ========================================================= */
