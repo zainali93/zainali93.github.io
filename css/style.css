@@ -1683,12 +1683,7 @@ button:focus-visible {
         gap: 0.8rem;
         padding: 2rem 0;
     }
-
-    .education-title-row {
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-
+    
     .education-status {
         align-self: flex-start;
     }
