@@ -312,6 +312,13 @@ button:focus-visible {
     border-color: var(--navy);
 }
 
+.pin-icon {
+    width: 15px;
+    height: 12px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
 
 /* =========================
    Portrait
@@ -963,6 +970,11 @@ button:focus-visible {
 
     font-size: 0.8rem;
     line-height: 1.5;
+}
+
+.experience-location img {
+    width: 10px;
+    height: 10px;
 }
 
 .experience-details {
