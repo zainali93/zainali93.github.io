@@ -697,13 +697,15 @@ button:focus-visible {
 .publication-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.2rem;
+    align-items: center;
 
     margin-top: 1rem;
 }
 
 .publication-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
 
     color: #245ea8;
 
@@ -728,8 +730,20 @@ button:focus-visible {
 }
 
 .publication-link-button {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+}
+
+.publication-link-icon {
+    width: 19px;
+    height: 19px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.publication-link+.publication-link {
+    margin-left: 0.9rem;
+    padding-left: 0.9rem;
+    border-left: 1px solid var(--border);
 }
 
 
