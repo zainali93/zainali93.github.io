@@ -1,19 +1,19 @@
-const markhorPaperButton = document.getElementById("markhor-paper-info");
-const markhorPaperNotice = document.getElementById("markhor-paper-notice");
+// const markhorPaperButton = document.getElementById("markhor-paper-info");
+// const markhorPaperNotice = document.getElementById("markhor-paper-notice");
 
-if (markhorPaperButton && markhorPaperNotice) {
-    markhorPaperButton.addEventListener("click", () => {
-        const isExpanded =
-            markhorPaperButton.getAttribute("aria-expanded") === "true";
+// if (markhorPaperButton && markhorPaperNotice) {
+//     markhorPaperButton.addEventListener("click", () => {
+//         const isExpanded =
+//             markhorPaperButton.getAttribute("aria-expanded") === "true";
 
-        markhorPaperButton.setAttribute(
-            "aria-expanded",
-            String(!isExpanded)
-        );
+//         markhorPaperButton.setAttribute(
+//             "aria-expanded",
+//             String(!isExpanded)
+//         );
 
-        markhorPaperNotice.hidden = isExpanded;
-    });
-}
+//         markhorPaperNotice.hidden = isExpanded;
+//     });
+// }
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(
     '.nav-links a[href^="#"]'
